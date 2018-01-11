@@ -3,7 +3,7 @@ var app = express();
 // app.get('/',function(req,res){
 // 	res.send('Hello Express');
 // });
-var port = 3000;
+var port = process.env.PORT||3000;
 var middleWare = require('./middleware.js');
 // var middleWare={
 // 	requireAuthentication: function(req,res,next){
